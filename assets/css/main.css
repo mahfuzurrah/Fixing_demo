@@ -66,9 +66,12 @@
 }
 
 .filter-insights .dropdown-container .filter p {
-  /* text-align: center; */
-  width: 1050px;
-  /* background: #000; */
+  text-align: center;
+}
+
+.filter-insights .dropdown-container .filter p.drop_des {
+  width: 1050px !important;
+  text-align: justify;
 }
 
 .filter-insights .dropdown-container .dropdown-menu {

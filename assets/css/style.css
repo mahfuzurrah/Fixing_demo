@@ -2929,6 +2929,7 @@ textarea.form-control-lg {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  margin-bottom: 0;
 }
 
 .valid-feedback {
@@ -12598,6 +12599,7 @@ h5 {
 
 .input-group {
   border: 1px solid var(--meta-color);
+  border-radius: 5px;
 }
 
 .input-group-text {
@@ -12955,6 +12957,7 @@ h5 {
 .order-status .orderd-etails .status .status-item-group .item .btn {
   padding: 8px 15px;
   width: 120px;
+  background-color: var(--bs-primary);
 }
 
 .order-status .orderd-etails .status .status-item-group .item .btn.closed-btn {
@@ -12964,7 +12967,7 @@ h5 {
 }
 
 .order-status .orderd-etails .status .status-item-group .item .btn:hover {
-  background-color: var(--bs-primary);
+  background-color: var(--primary-color);
   color: var(--white-color);
 }
 
@@ -14954,6 +14957,11 @@ input[type="date"].status-mod-input::-webkit-calendar-picker-indicator {
 
 .status-mod-closed-obl-body {
   padding: 45px 30px;
+}
+
+.status-mod-closed-obl-body p{
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 .status-mod-request-icon {
@@ -17005,4 +17013,8 @@ span#text-one {
 #off-Identification a{
   padding-left: 0;
   margin-top: -20px;
+}
+
+.add_small_font {
+  font-size: 10px !important;
 }
