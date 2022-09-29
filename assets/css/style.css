@@ -12182,7 +12182,7 @@ fieldset:disabled .btn {
 :root {
   --header-height: 3.5rem;
   --primary-color: #042c47;
-  --secondary-color: #1b5deb;
+  --secondary-color: #0E92EC;
   --secondary-light-color: #18306444;
   --title-color: #3e4657;
   --text-color: var(--primary-color);
@@ -13201,7 +13201,8 @@ status-item #a li span,
   bottom: -5px;
   width: 100%;
   height: 4px;
-  background: var(--primary-color);
+  /* background: var(--secondary-color); */
+  /* background: #0E92EC; */
 }
 
 #order-by-status {
@@ -14849,7 +14850,16 @@ input[type="date"].status-mod-input::-webkit-calendar-picker-indicator {
 
 .tatus-mod-upload-tab .nav-pills {
   width: 318px;
+  /* border-bottom: 1px solid var(--text-color); */
+}
+
+.tatus-mod-upload-tab .nav-pills .b_b{
+  /* width: 318px; */
   border-bottom: 1px solid var(--text-color);
+}
+
+.tatus-mod-upload-tab .nav-pills .nav-link.active.none_b_b{
+  border: none !important;
 }
 
 @media (max-width: 575.98px) {
