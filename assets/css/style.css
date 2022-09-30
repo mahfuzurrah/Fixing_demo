@@ -7245,6 +7245,46 @@ fieldset:disabled .btn {
   transform: translateX(100%);
 }
 
+
+.offcanvas-end.offcanvas-center-end {
+  top: 0;
+  width: 400px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  right: 20%;
+  transform: translateX(0%);
+}
+
+@media screen and (max-width: 1450px) {
+  .offcanvas-end.offcanvas-center-end {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .offcanvas-end.offcanvas-center-end {
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .offcanvas-end.offcanvas-center-end {
+    right: 18%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .offcanvas-end.offcanvas-center-end {
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .offcanvas-end.offcanvas-center-end {
+    right: 0 !important;
+  }
+}
+
+
 .offcanvas-top {
   top: 0;
   right: 0;
