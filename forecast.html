@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css" />
   <title>Welcome to LYNX!</title>
+
+  <link rel="stylesheet" href="assets/css/apexcharts.css" />
+  <link rel="stylesheet" href="assets/css/lightpick.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<link rel="stylesheet" href="assets/css/apexcharts.css" />
-<link rel="stylesheet" href="assets/css/lightpick.css" />
-<link rel="stylesheet" href="assets/css/main.css" />
-<link rel="stylesheet" href="assets/css/style.css" />
 
 <body>
   <main>
@@ -59,7 +59,7 @@
             </li>
 
             <li class="nav-item dropdown navbarDropdown-btn position-relative" style="cursor: pointer;">
-              <a class="nav-link dropdown-toggle" onclick="showNavRight()">
+              <a class="nav-link dropdown-toggle user_id" onclick="showNavRight()">
                 Flint Hill
               </a>
               <!-- ?cus-nav-right-side -->
@@ -201,7 +201,8 @@
                 <div class="col-lg-4 col-md-6">
                   <div class="item">
                     <p>Product Filter</p>
-                    <select name="potencial" id="potencial" class="custom-select sources" placeholder="Premium Gasoline">
+                    <select name="potencial" id="potencial" class="custom-select sources"
+                      placeholder="Premium Gasoline">
                       <option selected>Premium Gasoline</option>
                       <option value="1">Regular Gasoline</option>
                       <option value="1">ULSD</option>
@@ -318,102 +319,145 @@
                                           <li>07-13-2022</a></li>
                                           <li>10,015 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079">
-                                            <a href="#restor-popup" data-bs-toggle="modal" ><i class="restor-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              </svg>
+                                            <a href="#restor-popup" data-bs-toggle="modal"><i class="restor-icon"><svg
+                                                  width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path
+                                                    d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928"
+                                                    stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                  <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4"
+                                                    stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                </svg>
                                               </i></a>
                                           </li>
                                           <li>5,098 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079"></a>
                                           </li>
-                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img class="last-icon"
-                                                src="assets/images/exclamation-circle.svg" alt=""></a></li>
+                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img
+                                                class="last-icon" src="assets/images/exclamation-circle.svg" alt=""></a>
+                                          </li>
                                         </ul>
 
                                         <ul class="list">
                                           <li>07-13-2022</a></li>
                                           <li>10,015 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079">
-                                            <a href=""><i class="restor-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              </svg>
+                                            <a href=""><i class="restor-icon"><svg width="15" height="15"
+                                                  viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path
+                                                    d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928"
+                                                    stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                  <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4"
+                                                    stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                </svg>
                                               </i></a>
                                           </li>
                                           <li>5,098 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079"></a>
                                           </li>
-                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img class="last-icon"
-                                            src="assets/images/exclamation-circle.svg" alt=""></a></li>
+                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img
+                                                class="last-icon" src="assets/images/exclamation-circle.svg" alt=""></a>
+                                          </li>
                                         </ul>
 
                                         <ul class="list">
                                           <li>07-13-2022</a></li>
                                           <li>10,015 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079">
-                                            <a href=""><i class="restor-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              </svg>
+                                            <a href=""><i class="restor-icon"><svg width="15" height="15"
+                                                  viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path
+                                                    d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928"
+                                                    stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                  <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4"
+                                                    stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                </svg>
                                               </i></a>
                                           </li>
                                           <li>5,098 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079"></a>
                                           </li>
-                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img class="last-icon"
-                                            src="assets/images/exclamation-circle.svg" alt=""></a></li>
+                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img
+                                                class="last-icon" src="assets/images/exclamation-circle.svg" alt=""></a>
+                                          </li>
                                         </ul>
 
                                         <ul class="list">
                                           <li>07-13-2022</a></li>
                                           <li>10,015 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079">
-                                            <a href=""><i class="restor-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              </svg>
+                                            <a href=""><i class="restor-icon"><svg width="15" height="15"
+                                                  viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path
+                                                    d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928"
+                                                    stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                  <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4"
+                                                    stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                </svg>
                                               </i></a>
                                           </li>
                                           <li>5,098 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079"></a>
                                           </li>
-                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img class="last-icon"
-                                            src="assets/images/exclamation-circle.svg" alt=""></a></li>
+                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img
+                                                class="last-icon" src="assets/images/exclamation-circle.svg" alt=""></a>
+                                          </li>
                                         </ul>
 
                                         <ul class="list">
                                           <li>07-13-2022</a></li>
                                           <li>10,015 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079">
-                                            <a href=""><i class="restor-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              </svg>
+                                            <a href=""><i class="restor-icon"><svg width="15" height="15"
+                                                  viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path
+                                                    d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928"
+                                                    stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                  <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4"
+                                                    stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                </svg>
                                               </i></a>
                                           </li>
                                           <li>5,098 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079"></a>
                                           </li>
-                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img class="last-icon"
-                                            src="assets/images/exclamation-circle.svg" alt=""></a></li>
+                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img
+                                                class="last-icon" src="assets/images/exclamation-circle.svg" alt=""></a>
+                                          </li>
                                         </ul>
 
                                         <ul class="list">
                                           <li>07-13-2022</a></li>
                                           <li>10,015 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079">
-                                            <a href=""><i class="restor-icon"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                              <path d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                                              </svg>
+                                            <a href=""><i class="restor-icon"><svg width="15" height="15"
+                                                  viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                  <path
+                                                    d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928"
+                                                    stroke="#C7C4C4" stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                  <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#C7C4C4"
+                                                    stroke-width="1.64446" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                </svg>
                                               </i></a>
                                           </li>
                                           <li>5,098 BBLS</li>
                                           <li><input type="text" class="form-select icon-none" placeholder="25,079"></a>
                                           </li>
-                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img class="last-icon"
-                                            src="assets/images/exclamation-circle.svg" alt=""></a></li>
+                                          <li>22,079 <a href="#Forecast-Detailed-View" data-bs-toggle="modal"><img
+                                                class="last-icon" src="assets/images/exclamation-circle.svg" alt=""></a>
+                                          </li>
                                         </ul>
 
                                       </div>
@@ -425,8 +469,8 @@
                           </div>
                           <div class="forecast-btn-group">
                             <div class="cta">
-                              <a href="" class="btn back-btn" >Save Changes</a>
-                              <a href="" class="btn" >Export To CSV</a>
+                              <a href="" class="btn back-btn">Save Changes</a>
+                              <a href="" class="btn">Export To CSV</a>
                             </div>
                           </div>
                         </div>
@@ -456,17 +500,20 @@
                 <div class="card-body">
                   <i>
                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928" stroke="#FEFBFB" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#FEFBFB" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                      <path
+                        d="M3.12966 13.3329H8.61121C9.24108 13.3329 9.86478 13.2089 10.4467 12.9678C11.0286 12.7268 11.5574 12.3735 12.0027 11.9281C12.4481 11.4827 12.8014 10.954 13.0425 10.3721C13.2835 9.79015 13.4076 9.16645 13.4076 8.53659C13.4076 7.90672 13.2835 7.28302 13.0425 6.7011C12.8014 6.11918 12.4481 5.59044 12.0027 5.14505C11.5574 4.69967 11.0286 4.34637 10.4467 4.10534C9.86478 3.8643 9.24108 3.74023 8.61121 3.74023H1.75928"
+                        stroke="#FEFBFB" stroke-width="1.64446" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M4.50005 1L1.75928 3.74077L4.50005 6.48155" stroke="#FEFBFB" stroke-width="1.64446"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                   </i>
 
                   <div class="card-content">
                     <h4>Restore Adjustment</h4>
-                    <p>Are you sure, you want to restore to  previous adjustements?</p>
+                    <p>Are you sure, you want to restore to previous adjustements?</p>
                     <div class="cta">
-                      <a href="" class="btn back-btn" >Cancel</a>
-                      <a href="" class="btn" >Restore</a>
+                      <a href="" class="btn back-btn">Cancel</a>
+                      <a href="" class="btn">Restore</a>
                     </div>
                   </div>
                 </div>
@@ -479,102 +526,102 @@
 
 
 
-        <!-- Popup 2 -->
-        <div class="modal fade" id="Forecast-Detailed-View" tabindex="-1" aria-labelledby="flint-modalLabel" aria-hidden="true">
-          <div class="modal-dialog  modal-dialog-centered">
-              <div class="modal-content" style="height: 450px">
-                  <div class="modal-body">
-                      <div class="container">
-                          <div class="modal-header" style="padding: 0;margin-bottom: 30px;">
-                              <h2 class="modal-title" id="staticBackdropLabel">Position Holder</h2>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                  aria-label="Close"></button>
-                          </div>
+    <!-- Popup 2 -->
+    <div class="modal fade" id="Forecast-Detailed-View" tabindex="-1" aria-labelledby="flint-modalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content" style="height: 450px">
+          <div class="modal-body">
+            <div class="container">
+              <div class="modal-header" style="padding: 0;margin-bottom: 30px;">
+                <h2 class="modal-title" id="staticBackdropLabel">Position Holder</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
 
-                          
-                          <div class="table-responsive">
-                            <table class="table mt-3">
-                                <thead>
-                                    <tr>
-                                        <th>Position Holders</th>
-                                        <th>Projected Sales</th>
-                                        <th>Inbound Schedule</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>john@example.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>john@example.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>john@example.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>john@example.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td>john@example.com</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h5 class="mb-3">Products</h5>
-                            <table class="table mt-3">
-                                <!-- <thead>
+
+              <div class="table-responsive">
+                <table class="table mt-3">
+                  <thead>
+                    <tr>
+                      <th>Position Holders</th>
+                      <th>Projected Sales</th>
+                      <th>Inbound Schedule</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5 class="mb-3">Products</h5>
+                <table class="table mt-3">
+                  <!-- <thead>
                                     <tr>
                                         <th>Position Holders</th>
                                         <th>Projected Sales</th>
                                     </tr>
                                 </thead> -->
-                                <tbody>
-                                    <tr>
-                                        <td>InstaPress</td>
-                                        <td>Vortex</td>
-                                    </tr>
-                                    <tr>
-                                        <td>InstaPress</td>
-                                        <td>Vortex</td>
-                                    </tr>
-                                    <tr>
-                                        <td>InstaPress</td>
-                                        <td>Vortex</td>
-                                    </tr>
-                                    <tr>
-                                        <td>InstaPress</td>
-                                        <td>Vortex</td>
-                                    </tr>
-                                    <tr>
-                                        <td>InstaPress</td>
-                                        <td>Vortex</td>
-                                    </tr>
-                                    <tr>
-                                        <td>InstaPress</td>
-                                        <td>Vortex</td>
-                                    </tr>
-                                    <tr>
-                                        <td>InstaPress</td>
-                                        <td>Vortex</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                      </div>
-                  </div>
+                  <tbody>
+                    <tr>
+                      <td>InstaPress</td>
+                      <td>Vortex</td>
+                    </tr>
+                    <tr>
+                      <td>InstaPress</td>
+                      <td>Vortex</td>
+                    </tr>
+                    <tr>
+                      <td>InstaPress</td>
+                      <td>Vortex</td>
+                    </tr>
+                    <tr>
+                      <td>InstaPress</td>
+                      <td>Vortex</td>
+                    </tr>
+                    <tr>
+                      <td>InstaPress</td>
+                      <td>Vortex</td>
+                    </tr>
+                    <tr>
+                      <td>InstaPress</td>
+                      <td>Vortex</td>
+                    </tr>
+                    <tr>
+                      <td>InstaPress</td>
+                      <td>Vortex</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+
+            </div>
           </div>
+        </div>
       </div>
+    </div>
 
 
 

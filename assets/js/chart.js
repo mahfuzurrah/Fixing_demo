@@ -38,7 +38,8 @@ Apex.dataLabels = {
 var colorPalette = ["#118DFF", "#D9D9D9", "#E044A7", "#FF4560", "#775DD0"];
 
 var optionsBarOne = {
-  series: [{
+  series: [
+    {
       name: "This Month",
       data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
     },
@@ -81,10 +82,12 @@ chart.render();
 /* ================================================*/
 /* Inventory timeline */
 var optionsInventoryBrush = {
-  series: [{
-    name: "Desktops",
-    data: [35000, 41000, 12000, 32000, 6000, 18000, 28000, 14800],
-  }, ],
+  series: [
+    {
+      name: "Desktops",
+      data: [35000, 41000, 12000, 32000, 6000, 18000, 28000, 14800],
+    },
+  ],
   chart: {
     height: 350,
     type: "line",
@@ -132,6 +135,12 @@ var optionsInventoryBrush = {
           val = (val / 1000).toFixed(0) + " K";
         }
         return val;
+      },
+    },
+    title: {
+      text: "BBLS",
+      style: {
+        fontSize: "10px",
       },
     },
   },
@@ -146,10 +155,12 @@ brush.render();
 /* ================================================*/
 /* Shipments this month */
 var optionsShipmentsBrush = {
-  series: [{
-    name: "Desktops",
-    data: [35000, 41000, 12000, 32000, 6000, 18000, 28000, 14800],
-  }, ],
+  series: [
+    {
+      name: "Desktops",
+      data: [35000, 41000, 12000, 32000, 6000, 18000, 28000, 14800],
+    },
+  ],
   chart: {
     height: 350,
     type: "line",
@@ -197,6 +208,12 @@ var optionsShipmentsBrush = {
           val = (val / 1000).toFixed(0) + " K";
         }
         return val;
+      },
+    },
+    title: {
+      text: "BBLS",
+      style: {
+        fontSize: "10px",
       },
     },
   },
@@ -226,7 +243,8 @@ var optionsLiftableBar = {
     },
   },
   colors: colorPalette,
-  series: [{
+  series: [
+    {
       name: "Current Inventory",
       data: [15000, 25000, 18000, 18000, 25000, 32000],
     },
@@ -297,10 +315,12 @@ var optionsShipmentsTankBar = {
     },
   },
   colors: ["#0D6ABF"],
-  series: [{
-    name: "Clothing",
-    data: [35000, 25000, 15000, 10000, 5000, 2000],
-  }, ],
+  series: [
+    {
+      name: "Clothing",
+      data: [35000, 25000, 15000, 10000, 5000, 2000],
+    },
+  ],
   labels: [60, 50, 40, 30, 20, 10],
   xaxis: {
     labels: {
@@ -315,7 +335,7 @@ var optionsShipmentsTankBar = {
     title: {
       text: "Tank",
       style: {
-        fontSize: "14px",
+        fontSize: "11px",
       },
     },
   },
@@ -339,9 +359,9 @@ var optionsShipmentsTankBar = {
       },
     },
     title: {
-      text: "sss",
+      text: "BBLS",
       style: {
-        fontSize: "14px",
+        fontSize: "10px",
       },
     },
   },
@@ -375,10 +395,12 @@ var optionsProductBar = {
   legend: {
     show: false,
   },
-  series: [{
-    name: "Clothing",
-    data: [50000, 20000, 10000],
-  }, ],
+  series: [
+    {
+      name: "Clothing",
+      data: [50000, 20000, 10000],
+    },
+  ],
   labels: ["FHR 87Nl", "FHR DSL", "FHR 91NL"],
   xaxis: {
     labels: {
@@ -393,7 +415,7 @@ var optionsProductBar = {
     title: {
       text: "Product",
       style: {
-        fontSize: "14px",
+        fontSize: "11px",
       },
     },
   },
@@ -419,7 +441,7 @@ var optionsProductBar = {
     title: {
       text: "BBLS",
       style: {
-        fontSize: "14px",
+        fontSize: "10px",
       },
     },
   },
@@ -465,12 +487,14 @@ var optionsCustomerBar = {
   legend: {
     show: false,
   },
-  series: [{
-    name: "Clothing",
-    data: [
-      25000, 52000, 30000, 25000, 11000, 12000, 10000, 6000, 4000, 2000, 1000,
-    ],
-  }, ],
+  series: [
+    {
+      name: "Clothing",
+      data: [
+        25000, 52000, 30000, 25000, 11000, 12000, 10000, 6000, 4000, 2000, 1000,
+      ],
+    },
+  ],
   labels: [
     "SERV Energy, LLC",
     "Robco Fuels, LLC",
@@ -524,7 +548,7 @@ var optionsCustomerBar = {
     title: {
       text: "BBLS",
       style: {
-        fontSize: "14px",
+        fontSize: "10px",
       },
     },
   },
@@ -561,10 +585,12 @@ var optionsDistributed = {
     },
   },
   colors: ["#0D6ABF"],
-  series: [{
-    name: "Clothing",
-    data: [25, 52, 30, 25, 11, 12],
-  }, ],
+  series: [
+    {
+      name: "Clothing",
+      data: [25, 52, 30, 25, 11, 12],
+    },
+  ],
   labels: [1, 2, 3, 4, 5, 6],
   xaxis: {
     labels: {
@@ -595,6 +621,7 @@ var optionsDistributed = {
     align: "left",
     style: {
       fontSize: "18px",
+      fontWeight: "medium",
     },
   },
 };
@@ -609,10 +636,12 @@ chartBar.render();
 // Trailer Check-ins by Hour
 
 var optionsLine = {
-  series: [{
-    name: "Low - 2013",
-    data: [12, 11, 14, 18, 17, 13, 13],
-  }, ],
+  series: [
+    {
+      name: "Low - 2013",
+      data: [12, 11, 14, 18, 17, 13, 13],
+    },
+  ],
   chart: {
     height: 350,
     type: "line",
@@ -629,6 +658,7 @@ var optionsLine = {
     align: "left",
     style: {
       fontSize: "18px",
+      fontWeight: "medium",
     },
   },
   grid: {
@@ -671,10 +701,12 @@ var optionsLoadBar = {
     },
   },
   colors: ["#0D6ABF"],
-  series: [{
-    name: "Clothing",
-    data: [80, 52, 30],
-  }, ],
+  series: [
+    {
+      name: "Clothing",
+      data: [80, 52, 30],
+    },
+  ],
   labels: [1, 2, 3],
   xaxis: {
     labels: {
@@ -712,6 +744,7 @@ var optionsLoadBar = {
     align: "left",
     style: {
       fontSize: "18px",
+      fontWeight: "medium",
     },
   },
 };
@@ -741,10 +774,12 @@ var optionsRejections = {
     },
   },
   colors: ["#0D6ABF"],
-  series: [{
-    name: "Rejections by Reason",
-    data: [80, 52, 40, 30, 20, 12, 8, 2],
-  }, ],
+  series: [
+    {
+      name: "Rejections by Reason",
+      data: [80, 52, 40, 30, 20, 12, 8, 2],
+    },
+  ],
   labels: [1, 2, 3, 4, 5, 6, 7, 8],
   xaxis: {
     labels: {
@@ -775,6 +810,7 @@ var optionsRejections = {
     align: "left",
     style: {
       fontSize: "18px",
+      fontWeight: "medium",
     },
   },
 };
@@ -804,10 +840,12 @@ var optionsRejectionsRate = {
     },
   },
   colors: ["#0D6ABF"],
-  series: [{
-    name: "Rejection Rate by Carrier",
-    data: [25, 52, 30],
-  }, ],
+  series: [
+    {
+      name: "Rejection Rate by Carrier",
+      data: [25, 52, 30],
+    },
+  ],
   labels: [1, 2, 3],
   xaxis: {
     labels: {
@@ -845,6 +883,7 @@ var optionsRejectionsRate = {
     align: "left",
     style: {
       fontSize: "18px",
+      fontWeight: "medium",
     },
   },
 };
@@ -880,10 +919,12 @@ var optionsTrailerBar = {
     },
   },
   colors: ["#0D6ABF"],
-  series: [{
-    name: "Trailer Capacity by Carrier",
-    data: [12, 10, 6, 4, 2, 1],
-  }, ],
+  series: [
+    {
+      name: "Trailer Capacity by Carrier",
+      data: [12, 10, 6, 4, 2, 1],
+    },
+  ],
   labels: [1, 2, 3, 4, 5, 6],
   xaxis: {
     labels: {
@@ -922,6 +963,7 @@ var optionsTrailerBar = {
     align: "left",
     style: {
       fontSize: "18px",
+      fontWeight: "medium",
     },
   },
 };
@@ -957,10 +999,12 @@ var optionsPopBar = {
     },
   },
   colors: ["#FF0000"],
-  series: [{
-    name: "Rejection History",
-    data: [5, 0, 16, 2, 0, 0, 4, 10, 8, 5, 2, 0],
-  }, ],
+  series: [
+    {
+      name: "Rejection History",
+      data: [5, 0, 16, 2, 0, 0, 4, 10, 8, 5, 2, 0],
+    },
+  ],
   labels: [
     "Jan",
     "Feb",
@@ -1028,13 +1072,15 @@ chartBar.render();
  */ // Error Logs
 
 var optionsErrorBar = {
-  series: [{
-    name: "Net Profit",
-    data: [
-      1, 0, 7, 2, 0, 0, 0, 6, 12, 8, 4, 2, 0, 6, 25, 0, 0, 0, 41, 0, 7, 0, 0,
-      0, 6, 0, 1,
-    ],
-  }, ],
+  series: [
+    {
+      name: "Net Profit",
+      data: [
+        1, 0, 7, 2, 0, 0, 0, 6, 12, 8, 4, 2, 0, 6, 25, 0, 0, 0, 41, 0, 7, 0, 0,
+        0, 6, 0, 1,
+      ],
+    },
+  ],
   chart: {
     type: "bar",
     height: 350,
@@ -1160,10 +1206,12 @@ var optionsStatusBar = {
   legend: {
     show: false,
   },
-  series: [{
-    name: "Clothing",
-    data: [3, 2, 0, 2, 4, 4, 2],
-  }, ],
+  series: [
+    {
+      name: "Clothing",
+      data: [3, 2, 0, 2, 4, 4, 2],
+    },
+  ],
   labels: [
     "Scheduled",
     "Checked-in",
@@ -1195,6 +1243,13 @@ var optionsStatusBar = {
   },
   dataLabels: {
     enabled: true,
+  },
+  title: {
+    text: "Order status overview",
+    style: {
+      fontSize: "14px",
+      fontWeight: "bold",
+    },
   },
 };
 
@@ -1403,7 +1458,8 @@ chart.render();
 // chart.render();
 
 var optionsForecast = {
-  series: [{
+  series: [
+    {
       name: "Today’s Sales",
       data: [
         null,
@@ -1519,7 +1575,8 @@ var optionsForecast = {
     ],
   },
   tooltip: {
-    y: [{
+    y: [
+      {
         title: {
           formatter: function (val) {
             return val + " (mins)";
@@ -1566,19 +1623,21 @@ var optionsForecast = {
     },
   },
   annotations: {
-    points: [{
-      x: 'Today’s Sales',
-      seriesIndex: 6,
-      label: {
-        borderColor: '#775DD0',
-        offsetY: 0,
-        style: {
-          color: '#fff',
-          background: '#775DD0',
+    points: [
+      {
+        x: "Today’s Sales",
+        seriesIndex: 6,
+        label: {
+          borderColor: "#775DD0",
+          offsetY: 0,
+          style: {
+            color: "#fff",
+            background: "#775DD0",
+          },
+          text: "Bananas are good",
         },
-        text: 'Bananas are good',
-      }
-    }]
+      },
+    ],
   },
   legend: {
     position: "top",

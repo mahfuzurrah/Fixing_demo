@@ -5,12 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css" />
   <title>Order Management</title>
-</head>
 
-<link rel="stylesheet" href="assets/css/main.css" />
-<link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
 <body>
   <main>
@@ -59,7 +58,7 @@
             </li>
 
             <li class="nav-item dropdown navbarDropdown-btn position-relative" style="cursor: pointer;">
-              <a class="nav-link dropdown-toggle" onclick="showNavRight()">
+              <a class="nav-link dropdown-toggle user_id" onclick="showNavRight()">
                 Flint Hill
               </a>
               <!-- ?cus-nav-right-side -->
@@ -213,7 +212,7 @@
           <!-- !++++++++++++++++++++++++++ tab one +++++++++++++++++++++++++-->
           <div class="tab-pane mt-3 ms-0 ps-0" id="submit-order-tab">
             <!-- Group select -->
-            <div class="group-select">
+            <div class="group-select or_m_top_selector">
               <!-- 1 -->
               <select class="form-select" aria-label="Default select example">
                 <option selected>Terminals</option>
@@ -246,12 +245,17 @@
                 <div class="elect-tanks-left">
                   <img class="hdd-network me-1 " src="assets/images/sg/Untitleddesign.webp" alt="">
                   <h6 class="mb-0 me-1">Select tanks smarte</h6>
-                  <span type="button"  data-bs-toggle="popover"  data-bs-content='Active pending orders are pending orders with a desired start date of the current date or future dates. Pending orders with start dates of past dates are expired. Expired pending orders will display with a "Declined" status in order status.'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-exclamation-circle me-4" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                    <path
-                      d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
-                  </svg></span>
+                  <span type="button" data-bs-toggle="popover"
+                    data-bs-content='Active pending orders are pending orders with a desired start date of the current date or future dates. Pending orders with start dates of past dates are expired. Expired pending orders will display with a "Declined" status in order status.'><svg
+                      width="16" height="16" viewBox="0 0 16 16" fill="none" class="me-4"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8 1C4.13438 1 1 4.13438 1 8C1 11.8656 4.13438 15 8 15C11.8656 15 15 11.8656 15 8C15 4.13438 11.8656 1 8 1ZM8 13.8125C4.79063 13.8125 2.1875 11.2094 2.1875 8C2.1875 4.79063 4.79063 2.1875 8 2.1875C11.2094 2.1875 13.8125 4.79063 13.8125 8C13.8125 11.2094 11.2094 13.8125 8 13.8125Z"
+                        fill="#325268" />
+                      <path
+                        d="M7.25 5.25C7.25 5.44891 7.32902 5.63968 7.46967 5.78033C7.61032 5.92098 7.80109 6 8 6C8.19891 6 8.38968 5.92098 8.53033 5.78033C8.67098 5.63968 8.75 5.44891 8.75 5.25C8.75 5.05109 8.67098 4.86032 8.53033 4.71967C8.38968 4.57902 8.19891 4.5 8 4.5C7.80109 4.5 7.61032 4.57902 7.46967 4.71967C7.32902 4.86032 7.25 5.05109 7.25 5.25V5.25ZM8.375 7H7.625C7.55625 7 7.5 7.05625 7.5 7.125V11.375C7.5 11.4438 7.55625 11.5 7.625 11.5H8.375C8.44375 11.5 8.5 11.4438 8.5 11.375V7.125C8.5 7.05625 8.44375 7 8.375 7Z"
+                        fill="#325268" />
+                    </svg></span>
                 </div>
                 <div class="elect-tanks-right">
                   <h6 class="color-blue mb-0 me-1">Auto-tank selection</h6>
@@ -280,12 +284,18 @@
             <!-- 2nd part -->
             <h4 class="mt-4">Active pending orders</h4>
             <p class="mb-4" style="font-size: 12px">Only active pending orders are displayed
-              <span type="button"  data-bs-toggle="popover"  data-bs-content='Active pending orders are pending orders with a desired start date of the current date or future dates. Pending orders with start dates of past dates are expired. Expired pending orders will display with a "Declined" status in order status.'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-exclamation-circle me-4" viewBox="0 0 16 16">
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                <path
-                  d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
-              </svg></span>
+              <span type="button" data-bs-toggle="popover"
+                data-bs-content='Active pending orders are pending orders with a desired start date of the current date or future dates. Pending orders with start dates of past dates are expired. Expired pending orders will display with a "Declined" status in order status.'>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="me-4"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 1C4.13438 1 1 4.13438 1 8C1 11.8656 4.13438 15 8 15C11.8656 15 15 11.8656 15 8C15 4.13438 11.8656 1 8 1ZM8 13.8125C4.79063 13.8125 2.1875 11.2094 2.1875 8C2.1875 4.79063 4.79063 2.1875 8 2.1875C11.2094 2.1875 13.8125 4.79063 13.8125 8C13.8125 11.2094 11.2094 13.8125 8 13.8125Z"
+                    fill="#325268" />
+                  <path
+                    d="M7.25 5.25C7.25 5.44891 7.32902 5.63968 7.46967 5.78033C7.61032 5.92098 7.80109 6 8 6C8.19891 6 8.38968 5.92098 8.53033 5.78033C8.67098 5.63968 8.75 5.44891 8.75 5.25C8.75 5.05109 8.67098 4.86032 8.53033 4.71967C8.38968 4.57902 8.19891 4.5 8 4.5C7.80109 4.5 7.61032 4.57902 7.46967 4.71967C7.32902 4.86032 7.25 5.05109 7.25 5.25V5.25ZM8.375 7H7.625C7.55625 7 7.5 7.05625 7.5 7.125V11.375C7.5 11.4438 7.55625 11.5 7.625 11.5H8.375C8.44375 11.5 8.5 11.4438 8.5 11.375V7.125C8.5 7.05625 8.44375 7 8.375 7Z"
+                    fill="#325268" />
+                </svg>
+              </span>
             </p>
             <div class="row row-cols-1 row-cols-xl-2 row-cols-xxl-3">
               <!-- ?Card 1-->
@@ -297,16 +307,16 @@
                         <h5>PetroNational</h5>
                       </div>
                       <div class="col mb-4 text-sm-end">
-                        <a data-bs-toggle="modal" data-bs-target="#PetroNationalDetailed"> Detailed View</a>
+                        <a data-bs-toggle="modal" data-bs-target="#PetroNationalDetailed"> Undelivered View</a>
                       </div>
                       <div class="col">
-                        <h5>Start Date</h5>
+                        <h5 class="small_date">Start Date</h5>
                         <div class="card-input">
                           <input type="date" value="Tue 1/4">
                         </div>
                       </div>
                       <div class="col">
-                        <h5>End Date</h5>
+                        <h5 class="small_date">End Date</h5>
                         <div class="card-input">
                           <input type="date" value="Tue 1/4">
                         </div>
@@ -361,9 +371,9 @@
                     <ul class="nav nav-pills mt-3 mb-3">
 
                       <li class="nav-item">
-                        <a data-bs-toggle="modal" data-bs-dismiss="modal" href="#om-mod-approved"
+                        <a data-bs-toggle="modal" data-bs-dismiss="modal" href="#om-mod-assignment"
                           class="secound-btn radious me-2">
-                          Approved
+                          Approve
                         </a>
                       </li>
                       <li class="nav-item">
@@ -385,16 +395,16 @@
                         <h5>Oil Company</h5>
                       </div>
                       <div class="col mb-4 text-md-end">
-                        <a data-bs-toggle="modal" data-bs-target="#PetroNationalDetailed"> Detailed View</a>
+                        <a data-bs-toggle="modal" data-bs-target="#PetroNationalDetailed"> Undelivered View</a>
                       </div>
                       <div class="col ">
-                        <h5>Start Date</h5>
+                        <h5 class="small_date">Start Date</h5>
                         <div class="card-input">
                           <input type="date" value="Tue 1/4">
                         </div>
                       </div>
                       <div class="col">
-                        <h5>End Date</h5>
+                        <h5 class="small_date">End Date</h5>
                         <div class="card-input">
                           <input type="date" value="Tue 1/4">
                         </div>
@@ -451,9 +461,9 @@
                     <ul class="nav nav-pills mt-3 mb-3">
 
                       <li class="nav-item">
-                        <a data-bs-toggle="modal" data-bs-dismiss="modal" href="#om-mod-approved"
+                        <a data-bs-toggle="modal" data-bs-dismiss="modal" href="#om-mod-assignment"
                           class="secound-btn radious me-2">
-                          Approved
+                          Approve
                         </a>
                       </li>
                       <li class="nav-item">
@@ -476,7 +486,7 @@
                         <h5 class="color-green">PetroNational</h5>
                       </div>
                       <div class="col mb-4 text-sm-end">
-                        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvas-Assign-Task"> Detailed View</a>
+                        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvas-Assign-Task">Undelivered View</a>
                       </div>
                     </div>
                     <h4>HiSpeed Oil</h4>
@@ -692,7 +702,7 @@
                               <a href="#om-mod-assign-tanks-mm" class="btn btn-dc" data-bs-toggle="offcanvas"
                                 data-bs-dismiss="modal">Decline</a>
                               <a href="#om-mod-approved" class="btn" data-bs-toggle="modal"
-                                data-bs-dismiss="modal">Approved</a>
+                                data-bs-dismiss="modal">Approve</a>
                             </div>
                             <a data-bs-toggle="offcanvas" href="#offcanvas-PetroNational" role="button"
                               aria-controls="offcanvasExample" data-bs-dismiss="modal">
@@ -1019,7 +1029,7 @@
                         <a href="#om-mod-assign-tanks-mm" data-bs-toggle="offcanvas" data-bs-dismiss="offcanvas"
                           class="btn btn-dc">Decline</a>
                         <a href="#om-mod-assign-tanks-mm" data-bs-toggle="offcanvas" data-bs-dismiss="offcanvas"
-                          class="btn">Approved</a>
+                          class="btn">Approve</a>
                       </div>
                       <a href="#" id="trailer-dropdown-icon">
                         <i for="openDropdown" class="dropdown" id="dropdown-btn">
@@ -2593,23 +2603,23 @@
 
         <div class="modal-body">
           <h4 class="fw-3">Assignment overview</h4>
-          <p>Review and confirm tank assignments for these orders.</p>
+          <p class="ex_small_font">Review and confirm tank assignments for these orders.</p>
           <!-- card one -->
           <div class="mod-assignment-card Regular shadow">
             <div class="row">
               <div class="col">
-                <h5>Tank 10</h5>
-                <p>Tue, Jan 4 <b>.</b> Bluewing One</p>
+                <h4>Tank 10</h4>
+                <p>Tue, Jan 4 <b style="position: relative; top: -4px">.</b> Bluewing One</p>
               </div>
               <div class="col">
-                <h5>ULSD</h5>
+                <h4>ULSD</h4>
               </div>
               <div class="col">
                 <div class="custrom-text">
                   <span>Inventory verified</span>
                   <h5>2,500 BBLS</h5>
                 </div>
-                <p class="mb-0">Rack Loading <b>.</b> 10 trailers</p>
+                <p class="mb-0">Rack Loading <b style="position: relative; top: -4px">.</b> 10 trailers</p>
               </div>
             </div>
           </div>
@@ -2621,7 +2631,7 @@
                 <h6>Confirm tank assignment</h6>
               </div>
               <div class="col align-items-center d-flex">
-                <h6>10 trailers <b>.</b> Tank 10</h6>
+                <h6>10 trailers <b style="position: relative; top: -4px">.</b> Tank 10</h6>
               </div>
               <div class="col text-end">
                 <button class="secound-btn me-2 bg-tra" data-bs-toggle="modal" data-bs-target="#om-mod-approved"
@@ -2644,8 +2654,8 @@
                       <span class="fw-300 text-end">Tue, Jan 4 - Wed, Jan 5</span>
                     </div>
                     <div class="col">
-                      <h4>2,500 BBLS <b>.</b> ULSD</h4>
-                      <span class="fw-300 text-end">PetroNational <b>.</b> Rack Loading (Truck Shipment)</span>
+                      <h4>2,500 BBLS <b style="position: relative; top: -4px">.</b> ULSD</h4>
+                      <span class="fw-300 text-end">PetroNational <b style="position: relative; top: -4px">.</b> Rack Loading (Truck Shipment)</span>
                     </div>
 
                   </div>
@@ -2663,7 +2673,7 @@
                   <div class="approved-content-area">
                     <!-- item -->
                     <div class="approved-content-item">
-                      <table class="table table-borderless">
+                      <table class="table table-borderless" style="margin-bottom: 0">
                         <thead>
                           <tr>
                             <th></th>
@@ -2683,7 +2693,7 @@
                             <td>Luxemborg</td>
                             <td>ULSD</td>
                             <td>8,000 USG</td>
-                            <td><select class="form-select" aria-label="Default select example">
+                            <td class="last__table_row"><select class="form-select" aria-label="Default select example">
                                 <option selected>Tank 10</option>
                               </select></td>
                           </tr>
@@ -2692,7 +2702,7 @@
                     </div>
                     <!-- item -->
                     <div class="approved-content-item">
-                      <table class="table table-borderless">
+                      <table class="table table-borderless" style="margin-bottom: 0">
                         <thead>
                           <tr>
                             <th></th>
@@ -2706,22 +2716,23 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>1</td>
+                            <td>2</td>
                             <td>Bluewing One</td>
                             <td>87999</td>
                             <td>Luxemborg</td>
                             <td>ULSD</td>
                             <td>8,000 USG</td>
-                            <td><select class="form-select" aria-label="Default select example">
+                            <td class="last__table_row"><select class="form-select" aria-label="Default select example">
                                 <option selected>Tank 10</option>
                               </select></td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
+                   
                     <!-- item -->
                     <div class="approved-content-item">
-                      <table class="table table-borderless">
+                      <table class="table table-borderless" style="margin-bottom: 0">
                         <thead>
                           <tr>
                             <th></th>
@@ -2735,22 +2746,23 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>1</td>
+                            <td>3</td>
                             <td>Bluewing One</td>
                             <td>87999</td>
                             <td>Luxemborg</td>
                             <td>ULSD</td>
                             <td>8,000 USG</td>
-                            <td><select class="form-select" aria-label="Default select example">
+                            <td class="last__table_row"><select class="form-select" aria-label="Default select example">
                                 <option selected>Tank 10</option>
                               </select></td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
+                   
                     <!-- item -->
                     <div class="approved-content-item">
-                      <table class="table table-borderless">
+                      <table class="table table-borderless" style="margin-bottom: 0">
                         <thead>
                           <tr>
                             <th></th>
@@ -2764,19 +2776,50 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>1</td>
+                            <td>4</td>
                             <td>Bluewing One</td>
                             <td>87999</td>
                             <td>Luxemborg</td>
                             <td>ULSD</td>
                             <td>8,000 USG</td>
-                            <td><select class="form-select" aria-label="Default select example">
+                            <td class="last__table_row"><select class="form-select" aria-label="Default select example">
                                 <option selected>Tank 10</option>
                               </select></td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
+                   
+                    <!-- item -->
+                    <div class="approved-content-item">
+                      <table class="table table-borderless" style="margin-bottom: 0">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Terminal</th>
+                            <th>Order Number</th>
+                            <th>Trailer</th>
+                            <th>Product</th>
+                            <th>Amount</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>5</td>
+                            <td>Bluewing One</td>
+                            <td>87999</td>
+                            <td>Luxemborg</td>
+                            <td>ULSD</td>
+                            <td>8,000 USG</td>
+                            <td class="last__table_row"><select class="form-select" aria-label="Default select example">
+                                <option selected>Tank 10</option>
+                              </select></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                   
                   </div>
                 </div>
               </div>
@@ -2797,8 +2840,8 @@
         <!-- body -->
         <div class="modal-body pt-0">
           <div class="scheduled-header mb-5">
-            <h4 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                class="bi bi-check2-circle" viewBox="0 0 16 16">
+            <h4 class="mb-0 mod-scheduled_title_text"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
                 <path
                   d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
                 <path
@@ -2808,7 +2851,7 @@
           </div>
 
           <div class="d-flex justify-content-between">
-            <h5 class="mb-0">Order summary</h5>
+            <h6 class="mb-2">Order summary</h6>
             <button class="secound-btn" data-bs-toggle="modal" data-bs-dismiss="modal" type="button"
               href="#track-order-status-modal">Track Order</button>
           </div>
@@ -2820,12 +2863,12 @@
                   data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   <div class="row accordion-scheduled-row row-cols-1 row-cols-md-2">
                     <div class="col mb-2">
-                      <h4>Tank 10</h4>
+                      <h5 class="mb-0">Tank 10</h5>
                       <span class="fw-300 text-end">Tue, Jan 4 - Wed, Jan 5</span>
                     </div>
                     <div class="col">
-                      <h4>2,500 BBLS <b>.</b> ULSD</h4>
-                      <span class="fw-300 text-end">PetroNational <b>.</b> Rack Loading (Truck Shipment)</span>
+                      <h5 class="mb-0">2,500 BBLS <b style="position: relative; top: -4px">.</b> ULSD</h5>
+                      <span class="fw-300 text-end">PetroNational <b style="position: relative; top: -4px">.</b> Rack Loading (Truck Shipment)</span>
                     </div>
 
                   </div>
@@ -2860,9 +2903,9 @@
                             <td>Luxemborg</td>
                             <td>ULSD</td>
                             <td>8,000 USG</td>
-                            <td><select class="form-select" aria-label="Default select example">
-                                <option selected>Tank 10</option>
-                              </select></td>
+                            <td class="last__table_row"><select class="form-select" aria-label="Default select example">
+                              <option selected>Tank 10</option>
+                            </select></td>
                           </tr>
                         </tbody>
                       </table>
@@ -2883,15 +2926,15 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>1</td>
+                            <td>2</td>
                             <td>Bluewing One</td>
                             <td>87999</td>
                             <td>Luxemborg</td>
                             <td>ULSD</td>
                             <td>8,000 USG</td>
-                            <td><select class="form-select" aria-label="Default select example">
-                                <option selected>Tank 10</option>
-                              </select></td>
+                            <td class="last__table_row"><select class="form-select" aria-label="Default select example">
+                              <option selected>Tank 10</option>
+                            </select></td>
                           </tr>
                         </tbody>
                       </table>
@@ -2912,15 +2955,15 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>1</td>
+                            <td>3</td>
                             <td>Bluewing One</td>
                             <td>87999</td>
                             <td>Luxemborg</td>
                             <td>ULSD</td>
                             <td>8,000 USG</td>
-                            <td><select class="form-select" aria-label="Default select example">
-                                <option selected>Tank 10</option>
-                              </select></td>
+                            <td class="last__table_row"><select class="form-select" aria-label="Default select example">
+                              <option selected>Tank 10</option>
+                            </select></td>
                           </tr>
                         </tbody>
                       </table>
@@ -2941,15 +2984,15 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>1</td>
+                            <td>4</td>
                             <td>Bluewing One</td>
                             <td>87999</td>
                             <td>Luxemborg</td>
                             <td>ULSD</td>
                             <td>8,000 USG</td>
-                            <td><select class="form-select" aria-label="Default select example">
-                                <option selected>Tank 10</option>
-                              </select></td>
+                            <td class="last__table_row"><select class="form-select" aria-label="Default select example">
+                              <option selected>Tank 10</option>
+                            </select></td>
                           </tr>
                         </tbody>
                       </table>
@@ -3006,7 +3049,7 @@
               <div class="custrom-accordion" data-bs-toggle="pill" data-bs-target="#custrom_accordion_tow">
                 <div class="row">
                   <div class="col">
-                    <h5>UlSD</h5>
+                    <h4>ULSD</h4>
                     <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
                   </div>
                   <div class="col text-end">
@@ -3186,7 +3229,7 @@
               <div class="custrom-accordion" data-bs-toggle="pill" data-bs-target="#custrom_accordion_tow-two">
                 <div class="row">
                   <div class="col">
-                    <h5>UlSD</h5>
+                    <h4>ULSD</h4>
                     <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
                   </div>
                   <div class="col text-end">
@@ -3380,7 +3423,7 @@
               <div class="custrom-accordion active" data-bs-toggle="pill" data-bs-target="#custrom_accordion_tow-three">
                 <div class="row">
                   <div class="col">
-                    <h5>UlSD</h5>
+                    <h4>ULSD</h4>
                     <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
                   </div>
                   <div class="col text-end">
@@ -3557,24 +3600,24 @@
 
         <div class="modal-body">
           <h4 class="fw-3">Assignment overview</h4>
-          <p>Review and confirm tank assignments for these orders.</p>
+          <p class="ex_small_font">Review and confirm tank assignments for these orders.</p>
           <!-- card one -->
           <div class="mod-assignment-card Regular shadow">
             <div class="row">
               <div class="col">
-                <h5>Tank 10</h5>
-                <p>Tue, Jan 4 <b>.</b> Bluewing One</p>
+                <h4>Tank 10</h4>
+                <p>Tue, Jan 4 <b style="position: relative; top: -4px">.</b> Bluewing One</p>
               </div>
               <div class="col">
-                <h5>Tank 10</h5>
-                <p>Tue, Jan 4 <b>.</b> Bluewing One</p>
+                <h4>Tank 10</h4>
+                <p>Tue, Jan 4 <b style="position: relative; top: -4px">.</b> Bluewing One</p>
               </div>
               <div class="col">
                 <div class="custrom-text">
                   <span>Inventory verified</span>
                   <h5>2,500 BBLS</h5>
                 </div>
-                <p class="mb-0">Rack Loading <b>.</b> 10 trailers</p>
+                <p class="mb-0">Rack Loading <b style="position: relative; top: -4px">.</b> 10 trailers</p>
               </div>
             </div>
           </div>
@@ -3586,7 +3629,7 @@
                 <h6>Confirm tank assignment</h6>
               </div>
               <div class="col align-items-center d-flex">
-                <h6>10 trailers <b>.</b> Tank 10</h6>
+                <h6>10 trailers <b style="position: relative; top: -4px">.</b> Tank 10</h6>
               </div>
               <div class="col text-end">
                 <button class="secound-btn me-2 bg-tra" data-bs-toggle="modal"
@@ -3609,8 +3652,8 @@
                       <span class="fw-300 text-end">Tue, Jan 4 - Wed, Jan 5</span>
                     </div>
                     <div class="col">
-                      <h4>2,500 BBLS <b>.</b> ULSD</h4>
-                      <span class="fw-300 text-end">PetroNational <b>.</b> Rack Loading (Truck Shipment)</span>
+                      <h4>2,500 BBLS <b style="position: relative; top: -4px">.</b> ULSD</h4>
+                      <span class="fw-300 text-end">PetroNational <b style="position: relative; top: -4px">.</b> Rack Loading (Truck Shipment)</span>
                     </div>
 
                   </div>
@@ -3756,8 +3799,8 @@
                       <span class="fw-300 text-end">Tue, Jan 4 - Wed, Jan 5</span>
                     </div>
                     <div class="col">
-                      <h4>2,500 BBLS <b>.</b> ULSD</h4>
-                      <span class="fw-300 text-end">PetroNational <b>.</b> Rack Loading (Truck Shipment)</span>
+                      <h4>2,500 BBLS <b style="position: relative; top: -4px">.</b> ULSD</h4>
+                      <span class="fw-300 text-end">PetroNational <b style="position: relative; top: -4px">.</b> Rack Loading (Truck Shipment)</span>
                     </div>
 
                   </div>
@@ -3903,8 +3946,8 @@
                       <span class="fw-300 text-end">Tue, Jan 4 - Wed, Jan 5</span>
                     </div>
                     <div class="col">
-                      <h4>2,500 BBLS <b>.</b> ULSD</h4>
-                      <span class="fw-300 text-end">PetroNational <b>.</b> Rack Loading (Truck Shipment)</span>
+                      <h4>2,500 BBLS <b style="position: relative; top: -4px">.</b> ULSD</h4>
+                      <span class="fw-300 text-end">PetroNational <b style="position: relative; top: -4px">.</b> Rack Loading (Truck Shipment)</span>
                     </div>
 
                   </div>
@@ -4318,7 +4361,7 @@
           <div class="custrom-accordion" data-bs-toggle="pill" data-bs-target="#custrom_accordion_tow_two_one">
             <div class="row">
               <div class="col">
-                <h5>UlSD</h5>
+                <h4>ULSD</h4>
                 <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
               </div>
               <div class="col text-end">
@@ -5222,14 +5265,14 @@
             <div class="col-lg-6">
               <div class="tab-content">
                 <div id="frequency-one" class="container frequency-content tab-pane active">
-                  <h6 class="fw-7">Select billing frequency</h6>
+                  <h6 class="fw-7">Subtotal before applicable taxes</h6>
                   <h5 class="py-1">$200</h5>
                   <div class="track-order-tk-con">
                     <div class="track-order-status-btns mb-4">
                       <a href="order_status.html"><button class="btn">Pay now</button></a>
                       <button class="btn btn_inviice_func" onclick="hideBtnFunction()">Invoice me instead</button>
                     </div>
-                    <a class="nav-link" href="order_status.html">30-day free trial</a>
+                    <a class="nav-link" href="order_status.html" style="padding: 0">30-day free trial</a>
                   </div>
                   <div class="track-order-tk-con-ontab">
                     <div class="mb-4">
@@ -5242,7 +5285,7 @@
 
                 </div>
                 <div id="frequency-two" class="container tab-pane frequency-content fade">
-                  <h6 class="fw-7">Select billing frequency</h6>
+                  <h6 class="fw-7">Subtotal before applicable taxes</h6>
                   <h5 class="py-1">$2000</h5>
                   <div class="track-order-tk-con2">
                     <div class="track-order-status-btns mb-4">
@@ -5442,7 +5485,7 @@
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
   <script src="assets/js/custom_jquery.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

@@ -38,6 +38,11 @@
   margin-top: 20px;
 }
 
+.LYNX .section-title h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
 .filter-insights {
   margin-top: 50px;
 }
@@ -70,8 +75,9 @@
 }
 
 .filter-insights .dropdown-container .filter p.drop_des {
-  width: 1050px !important;
+  width: 1100px !important;
   text-align: justify;
+  margin: 0 10px;
 }
 
 .filter-insights .dropdown-container .dropdown-menu {
@@ -241,8 +247,13 @@
   padding: 0 25px;
   font-size: 16px;
   color: var(--title-text-color);
-  font-weight: 500;
+  font-weight: 400;
   padding-bottom: 20px;
+}
+
+.filter-insights .dropdown-container .add-filter-btn a.add-btn{
+text-decoration: underline !important;
+color: var(--secondary-color);
 }
 
 .filter-insights .dropdown-container .add-filter-btn span {
@@ -406,6 +417,11 @@
   color: var(--title-text-color);
 }
 
+.LYNX-overview #overview .tab-group .tab-item h6{
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .LYNX-overview #overview .tab-group .tab-data {
   margin-top: 40px;
 }
@@ -431,6 +447,8 @@
 
 .LYNX-overview #overview .tab-group .shipments h6 {
   color: var(--title-text-color);
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .LYNX-overview #overview .tab-group .shipments .shipments-progress,
@@ -444,6 +462,11 @@
 .LYNX-overview #overview .tab-group .shipments-month {
   align-items: baseline;
   margin-top: 0;
+}
+
+.LYNX-overview #overview .tab-group .shipments-month h6{
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .LYNX-overview #overview .tab-group .shipments .shipments-progress .closed h5 {
@@ -535,8 +558,10 @@
   padding: 20px;
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--title-text-color);
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 .LYNX-overview #overview .wrapper .big-chart .chart {
@@ -590,6 +615,7 @@
   color: var(--description-color);
   text-align: left;
   cursor: pointer;
+  font-weight: var(--medium);
 }
 
 @media screen and (max-width: 576px) {
@@ -1192,3 +1218,8 @@
   padding: 5px 10px;
   display: inline-block;
 }
+
+.small_date{
+  font-size: 11px
+}
+
