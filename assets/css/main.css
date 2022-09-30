@@ -1227,4 +1227,5 @@ color: #095F99;
 .text-sm-end a,
 .text-md-end a{
   text-decoration: underline !important;
+  cursor: pointer;
 }
