@@ -1223,3 +1223,8 @@ color: #095F99;
   font-size: 16px;
 }
 
+
+.text-sm-end a,
+.text-md-end a{
+  text-decoration: underline !important;
+}
