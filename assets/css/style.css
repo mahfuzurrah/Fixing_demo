@@ -5464,7 +5464,7 @@ fieldset:disabled .btn {
   font-size: 25px;
 }
 
-.accordion-flush .accordion-item .accordion-button .text-end{
+.accordion-flush .accordion-item .accordion-button .text-end {
   color: var(--description-color);
 }
 
@@ -12560,8 +12560,19 @@ h5 {
   height: 93vh;
   z-index: 999;
   position: fixed;
-  top: 62px;
+  top: 63px;
 }
+
+.main-body .toggle_icon button {
+  background: transparent;
+  padding: 0;
+  margin-left: 10px;
+  margin-top: 70px;
+  position: absolute;
+  z-index: 999999;
+  position: fixed;
+}
+
 
 .main-body .body-content {
   flex-grow: 1;
@@ -12587,6 +12598,10 @@ h5 {
     padding-top: 40px;
     padding: 0 20px;
     margin-top: 100px;
+  }
+
+  .main-body .toggle_icon button{
+    display: none;
   }
 }
 
@@ -12752,6 +12767,11 @@ h5 {
 .side-appbar .navbar {
   background-color: transparent !important;
   overflow: hidden;
+  margin-top: 30px;
+}
+
+.top_user_nav .navbar{
+margin-top: 0 !important;
 }
 
 .side-appbar .navbar-nav {
@@ -16221,15 +16241,15 @@ span#text-one {
   top: -20px;
 }
 
-.last__table_row .form-select{
+.last__table_row .form-select {
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
 }
 
-.mod-assignment-card.Regular.shadow p{
- font-size: 14px;
+.mod-assignment-card.Regular.shadow p {
+  font-size: 14px;
 }
 
-.ex_small_font{
+.ex_small_font {
   font-size: 12px;
 }
 

@@ -145,4 +145,10 @@ try {
     console.log("dsfsfs");
     statusModRight.style.display = "block";
   });
-} catch (e) {}
+} catch (e) { }
+
+try {
+  $(".toggle_btn").click(function(){
+    $(".side-appbar").toggleClass("hide");
+  });
+} catch (e) { }

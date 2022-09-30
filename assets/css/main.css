@@ -253,7 +253,7 @@
 
 .filter-insights .dropdown-container .add-filter-btn a.add-btn{
 text-decoration: underline !important;
-color: var(--secondary-color);
+color: #095F99;
 }
 
 .filter-insights .dropdown-container .add-filter-btn span {
