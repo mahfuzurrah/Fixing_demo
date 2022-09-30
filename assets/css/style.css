@@ -15541,19 +15541,21 @@ button:focus,
 }
 
 .Petro-detailed .detailed-input-items .os-select select {
-  width: 162px;
+  width: 150px;
   border-radius: 0;
 }
 
 .Petro-detailed .detailed-input-items .os-select select.form-select {
-  width: 162px;
+  width: 150px;
   border-radius: 0;
+  font-size: 14px;
 }
 
 .Petro-detailed .detailed-input-items .os-select input {
-  width: 162px;
+  width: 150px;
   border-radius: 0;
   border: 1px solid #ced4da !important;
+  font-size: 14px;
 }
 
 .Petro-detailed .filter-insights .filter .filter-header .header-item-group .item {
@@ -15574,7 +15576,7 @@ button:focus,
 }
 
 .Petro-detailed .filter-insights .filter .filter-header .btn-group .cta a.btn-dc {
-  background: #adb4ba;
+  background: #ADB4BA;
   color: var(--title-color);
   font-weight: 600;
 }
@@ -15594,6 +15596,7 @@ button:focus,
 .Petro-detailed .filter-insights .rack-lod {
   display: flex;
   align-items: center;
+  padding-top: 10px;
 }
 
 .Petro-detailed .filter-insights .rack-lod .item p {
