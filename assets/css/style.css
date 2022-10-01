@@ -2054,14 +2054,14 @@ progress {
   --bs-table-hover-color: #212529;
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   color: #212529;
   vertical-align: top;
   border-color: #dee2e6;
 }
 
 .table> :not(caption)>*>* {
-  padding: 0.5rem 0.5rem;
+  padding: 0 0.5rem;
   background-color: var(--bs-table-bg);
   border-bottom-width: 1px;
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
@@ -16270,7 +16270,9 @@ span#text-one {
 .approved-content-area .approved-content-item {
   border-bottom: 1px solid #c6c6c6 !important;
   display: flex;
+  align-items: center;
   min-width: 800px;
+  padding-top: 15px;
 }
 
 .approved-content-area .approved-content-item:last-child {
