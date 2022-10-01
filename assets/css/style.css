@@ -15621,6 +15621,10 @@ button:focus,
   font-weight: 600;
 }
 
+.Petro-detailed .filter-insights .filter .filter-header .btn-group .cta a.popup_btn{
+  margin: 5px;
+}
+
 .Petro-detailed .filter-insights .filter .filter-header .btn-group .cta a:hover {
   color: var(--white-color);
 }
