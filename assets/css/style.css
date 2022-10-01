@@ -7247,7 +7247,7 @@ fieldset:disabled .btn {
 
 
 .offcanvas-end.offcanvas-center-end {
-  top: 0;
+  top: 63px;
   width: 400px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   right: 20%;
