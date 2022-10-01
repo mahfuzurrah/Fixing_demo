@@ -16275,6 +16275,7 @@ span#text-one {
   padding-top: 15px;
 }
 
+
 .approved-content-area .approved-content-item:last-child {
   border-bottom: none !important;
 }
@@ -16358,6 +16359,11 @@ span#text-one {
   border: 1px solid #c6c6c6;
   border-radius: 4px;
   margin-top: 20px;
+  overflow: hidden
+}
+
+.mod-dicline-boxs .mod-dicline-box .col{
+  margin-top: 15px;
 }
 
 .mod-dicline-boxs .mod-dicline-box {
