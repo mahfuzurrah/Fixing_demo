@@ -16285,7 +16285,7 @@ span#text-one {
 
 
 .last__table_row {
-  width: 115px;
+  width: 115px !important;
   padding: -1px !important;
   margin-right: 20px;
   position: relative;
