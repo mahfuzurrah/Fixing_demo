@@ -2421,7 +2421,7 @@
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   <div>
-                    <p>ULSD</p>
+                    <h4>ULSD</h4>
                     <span class="text-end">25,00 BBLS <span>10 Trailers</span></span>
                   </div>
                   <p class="text-end flex-grow-1 me-3 color-blue" id="text-change" style="margin-bottom: 0;">
@@ -2588,7 +2588,7 @@
               </div>
               <div class="col approved-btn-group">
                 <button class="secound-btn " data-bs-toggle="modal" data-bs-dismiss="modal" href="#om-mod-assignment"
-                  data-bs-dismiss="modal">Asssign Tank</button>
+                  data-bs-dismiss="modal">Assign Tank</button>
               </div>
             </div>
           </div>
@@ -2654,7 +2654,7 @@
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   <div class="row accordion-scheduled-row row-cols-1 row-cols-md-2">
-                    <div class="col mb-2">
+                    <div class="col">
                       <h4>Tank 10</h4>
                       <span class="fw-300 text-end">Tue, Jan 4 - Wed, Jan 5</span>
                     </div>
@@ -2879,7 +2879,10 @@
                     </div>
 
                   </div>
-                  <span class="text-end flex-grow-1 me-3 color-blue accordion-scheduled-view-all">View all orders</span>
+                  <p class="text-end flex-grow-1 me-3 color-blue" id="text-change" style="margin-bottom: 0;">
+                    <span id="text">View all orders</span> <br>
+                    <span id="text-one">Hide all orders</span>
+                  </p>
 
                 </button>
               </h2>
@@ -3036,8 +3039,8 @@
               <div class="custrom-accordion active" data-bs-toggle="pill" data-bs-target="#custrom_accordion_one">
                 <div class="row">
                   <div class="col">
-                    <h5>Regular Gasoline</h5>
-                    <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
+                    <h4>Regular Gasoline</h4>
+                    <p class="mb-0" style="font-size: 14px">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
                   </div>
                   <div class="col text-end">
                     <button class="secound-btn bg-tra" data-bs-toggle="modal" data-bs-dismiss="modal"
@@ -3057,7 +3060,7 @@
                 <div class="row">
                   <div class="col">
                     <h4>ULSD</h4>
-                    <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
+                    <p class="mb-0" style="font-size: 14px">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
                   </div>
                   <div class="col text-end">
                     <button class="secound-btn bg-tra" data-bs-toggle="modal" data-bs-dismiss="modal"
@@ -3109,7 +3112,7 @@
                     </div>
                     <div class="col approved-btn-group">
                       <button class="secound-btn " data-bs-toggle="modal" data-bs-dismiss="modal"
-                        href="#om-mod-assign-tanks-remove">Asssign Tank</button>
+                        href="#om-mod-assign-tanks-remove">Assign Tank</button>
                     </div>
                   </div>
                 </div>
@@ -3144,7 +3147,7 @@
                     </div>
                     <div class="col approved-btn-group">
                       <button class="secound-btn " data-bs-toggle="modal" data-bs-dismiss="modal"
-                        href="#om-mod-assignment">Asssign Tank</button>
+                        href="#om-mod-assignment">Assign Tank</button>
                     </div>
                   </div>
                 </div>
@@ -3184,7 +3187,7 @@
                     </div>
                     <div class="col approved-btn-group">
                       <button class="secound-btn " data-bs-toggle="modal" data-bs-dismiss="modal"
-                        href="#om-mod-assign-tanks-remove">Asssign Tanks</button>
+                        href="#om-mod-assign-tanks-remove">Assign Tanks</button>
                     </div>
                   </div>
                 </div>
@@ -3216,8 +3219,8 @@
               <div class="custrom-accordion active" data-bs-toggle="pill" data-bs-target="#custrom_accordion_one-one">
                 <div class="row">
                   <div class="col">
-                    <h5>Regular Gasoline</h5>
-                    <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
+                    <h4>Regular Gasoline</h4>
+                    <p class="mb-0" style="font-size: 14px">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
                   </div>
                   <div class="col text-end">
                     <button class="secound-btn bg-tra" data-bs-toggle="modal" data-bs-dismiss="modal"
@@ -3237,7 +3240,7 @@
                 <div class="row">
                   <div class="col">
                     <h4>ULSD</h4>
-                    <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
+                    <p class="mb-0" style="font-size: 14px">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
                   </div>
                   <div class="col text-end">
                     <button class="secound-btn bg-tra" data-bs-toggle="modal" data-bs-dismiss="modal"
@@ -3281,11 +3284,11 @@
                       <p>6</p>
                     </div>
                     <div class="col approved-btn-group">
-                      <button class="secound-btn " data-bs-toggle="modal" href="#om-mod-assign-tanks"
+                      <button class="secound-btn top_btn" data-bs-toggle="modal" href="#om-mod-assign-tanks"
                         data-bs-dismiss="modal">remove</button>
                     </div>
                     <div class="col col-down-btn">
-                      <a href="">
+                      <a href="" >
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                           class="bi bi-chevron-down" viewBox="0 0 16 16">
                           <path fill-rule="evenodd"
@@ -3334,7 +3337,7 @@
                     </div>
                     <div class="col approved-btn-group">
                       <button class="secound-btn " data-bs-toggle="modal"
-                        data-bs-target="#om-mod-assign-tanks-remove-ag-again" data-bs-dismiss="modal">Asssign
+                        data-bs-target="#om-mod-assign-tanks-remove-ag-again" data-bs-dismiss="modal">Assign
                         Tank</button>
                     </div>
                   </div>
@@ -3375,7 +3378,7 @@
                       </select>
                     </div>
                     <div class="col approved-btn-group">
-                      <button class="secound-btn " data-bs-toggle="modal" data-bs-dismiss="modal" href="#">Asssign
+                      <button class="secound-btn " data-bs-toggle="modal" data-bs-dismiss="modal" href="#">Assign
                         Tanks</button>
                     </div>
                   </div>
@@ -3410,8 +3413,8 @@
                 data-bs-target="#om-mod-assign-tanks">
                 <div class="row">
                   <div class="col">
-                    <h5>Regular Gasoline</h5>
-                    <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
+                    <h4>Regular Gasoline</h4>
+                    <p class="mb-0" style="font-size: 14px">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
                   </div>
                   <div class="col text-end">
                     <button class="secound-btn bg-tra" data-bs-toggle="modal" data-bs-dismiss="modal"
@@ -3431,7 +3434,7 @@
                 <div class="row">
                   <div class="col">
                     <h4>ULSD</h4>
-                    <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
+                    <p class="mb-0" style="font-size: 14px">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
                   </div>
                   <div class="col text-end">
                     <button class="secound-btn bg-tra" data-bs-toggle="modal" data-bs-dismiss="modal"
@@ -3453,7 +3456,7 @@
               <!-- mod-dicline box -->
               <div class="mod-dicline-boxs">
                 <div class="mod-dicline-box  p-3">
-                  <div class="row">
+                  <div class="row align-items-center">
                     <div class="col t-selected">
                       <h6>Tank selected</h6>
                       <p>Regular Gasoline</p>
@@ -3527,7 +3530,7 @@
                       </select>
                     </div>
                     <div class="col approved-btn-group">
-                      <button class="secound-btn ">Asssign Tank</button>
+                      <button class="secound-btn ">Assign Tank</button>
                     </div>
                   </div>
                 </div>
@@ -3573,7 +3576,7 @@
                     </div>
                     <div class="col approved-btn-group">
                       <button class="secound-btn " data-bs-toggle="modal" href="#om-mod-assignment-ov-two"
-                        data-bs-dismiss="modal">Asssign
+                        data-bs-dismiss="modal">Assign
                         Tanks</button>
                     </div>
                   </div>
@@ -3654,7 +3657,7 @@
                 <button class="accordion-button collapsed ex-accordion-button" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   <div class="row accordion-scheduled-row row-cols-1 row-cols-md-2">
-                    <div class="col mb-2">
+                    <div class="col">
                       <h4>Tank 10</h4>
                       <span class="fw-300 text-end">Tue, Jan 4 - Wed, Jan 5</span>
                     </div>
@@ -3802,7 +3805,7 @@
                 <button class="accordion-button collapsed ex-accordion-button" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-headingTwo-one" aria-expanded="false" aria-controls="flush-headingTwo-one">
                   <div class="row accordion-scheduled-row row-cols-1 row-cols-md-2">
-                    <div class="col mb-2">
+                    <div class="col">
                       <h4>Tank 10</h4>
                       <span class="fw-300 text-end">Tue, Jan 4 - Wed, Jan 5</span>
                     </div>
@@ -3950,7 +3953,7 @@
                 <button class="accordion-button collapsed ex-accordion-button" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-headingTwo-two" aria-expanded="false" aria-controls="flush-headingTwo-two">
                   <div class="row accordion-scheduled-row row-cols-1 row-cols-md-2">
-                    <div class="col mb-2">
+                    <div class="col">
                       <h4>Tank 10</h4>
                       <span class="fw-300 text-end">Tue, Jan 4 - Wed, Jan 5</span>
                     </div>
@@ -4355,8 +4358,8 @@
           <div class="custrom-accordion active" data-bs-toggle="pill" data-bs-target="#custrom_accordion_onetwo_one">
             <div class="row">
               <div class="col">
-                <h5>Regular Gasoline</h5>
-                <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
+                <h4>Regular Gasoline</h4>
+                <p class="mb-0" style="font-size: 14px">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
               </div>
               <div class="col text-end">
                 <button class="secound-btn bg-tra">Full Summary <svg xmlns="http://www.w3.org/2000/svg" width="13"
@@ -4374,7 +4377,7 @@
             <div class="row">
               <div class="col">
                 <h4>ULSD</h4>
-                <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
+                <p class="mb-0" style="font-size: 14px">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
               </div>
               <div class="col text-end">
                 <button class="secound-btn bg-tra">Full Summary <svg xmlns="http://www.w3.org/2000/svg" width="13"
@@ -4609,7 +4612,7 @@
                 </div>
                 <div class="col approved-btn-group">
                   <button class="secound-btn " data-bs-toggle="modal" data-bs-dismiss="offcanvas"
-                    href="#om-mod-assign-tanks-remove">Asssign Tank</button>
+                    href="#om-mod-assign-tanks-remove">Assign Tank</button>
                 </div>
               </div>
             </div>
@@ -5348,8 +5351,8 @@
           <div class="custrom-accordion active" data-bs-toggle="pill" data-bs-target="#custrom_accordion_one">
             <div class="row">
               <div class="col">
-                <h5>Regular Gasoline</h5>
-                <p class="mb-0">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
+                <h4>Regular Gasoline</h4>
+                <p class="mb-0" style="font-size: 14px">2,727 BBLS <span class="ms-4">12 Trailers</span></p>
               </div>
               <div class="col text-end">
                 <button class="secound-btn bg-tra">Hide all order <svg xmlns="http://www.w3.org/2000/svg" width="13"

@@ -16221,6 +16221,14 @@ span#text-one {
   border-radius: 5px;
 }
 
+.mod-dicline-box .col h6 {
+  font-size: 15px;
+}
+
+.mod-dicline-box .col p {
+  font-size: 13px;
+}
+
 .mod-dicline-box .form-select,
 .mod-dicline-box input {
   border: 1px solid #c6c6c6 !important;
@@ -16228,23 +16236,32 @@ span#text-one {
 }
 
 .mod-dicline-box .approved-btn-group button {
-  margin-top: 24px;
+  margin-top: 25px;
   padding: 6px 12px;
-  width: 130px;
+  width: 110px;
+  border-radius: 3px;
+}
+
+.mod-dicline-box .approved-btn-group button.top_btn {
+  margin-top: 8px !important;
+  margin: auto;
 }
 
 .mod-dicline-box .col.col-down-btn {
   padding: 10px;
   max-width: 35px;
   margin-top: 15px;
+  margin-right: 10px;
 }
 
 #custrom_accordion_tow-two a.secound-btn.mt-5.me-2.bg-tra {
   position: relative;
-  top: 30px;
+  top: 40px;
 }
 
-/* om-mod-assign-tanks */
+button.secound-btn.bg-tra {
+  margin-top: 10px;
+}
 
 .approved-btn-bottom {
   float: right;
@@ -16294,6 +16311,7 @@ span#text-one {
 
 .mod-assignment-card.Regular.shadow p {
   font-size: 14px;
+  margin: 0;
 }
 
 .ex_small_font {
@@ -16322,6 +16340,11 @@ span#text-one {
 
 .accordion-scheduled-row {
   width: 100% !important;
+}
+
+.accordion-scheduled-row .col h4 {
+  font-size: 18px;
+  margin: 0;
 }
 
 .accordion-scheduled-view-all {
@@ -16931,12 +16954,12 @@ span#text-one {
   height: 450px;
 }
 
-.bbb .table-top th{
+.bbb .table-top th {
   padding: 10px 10px !important;
 
 }
 
-.bbb .input-group{
+.bbb .input-group {
   padding: 10px 10px !important;
 
 }
