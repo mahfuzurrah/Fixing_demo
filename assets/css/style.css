@@ -7245,7 +7245,6 @@ fieldset:disabled .btn {
   transform: translateX(100%);
 }
 
-
 .offcanvas-end.offcanvas-center-end {
   top: 63px;
   width: 400px;
@@ -7283,7 +7282,6 @@ fieldset:disabled .btn {
     right: 0 !important;
   }
 }
-
 
 .offcanvas-top {
   top: 0;
@@ -12242,7 +12240,7 @@ fieldset:disabled .btn {
 :root {
   --header-height: 3.5rem;
   --primary-color: #042c47;
-  --secondary-color: #0E92EC;
+  --secondary-color: #0e92ec;
   --secondary-light-color: #18306444;
   --title-color: #3e4657;
   --text-color: var(--primary-color);
@@ -12613,7 +12611,6 @@ h5 {
   position: fixed;
 }
 
-
 .main-body .body-content {
   flex-grow: 1;
   width: 180px;
@@ -12640,7 +12637,7 @@ h5 {
     margin-top: 100px;
   }
 
-  .main-body .toggle_icon button{
+  .main-body .toggle_icon button {
     display: none;
   }
 }
@@ -12810,8 +12807,8 @@ h5 {
   margin-top: 30px;
 }
 
-.top_user_nav .navbar{
-margin-top: 0 !important;
+.top_user_nav .navbar {
+  margin-top: 0 !important;
 }
 
 .side-appbar .navbar-nav {
@@ -12913,7 +12910,7 @@ margin-top: 0 !important;
   font-weight: 400;
   margin-left: 5px;
   background: transparent;
-  color: #2B2D2F;
+  color: #2b2d2f;
   border-bottom: 2px solid transparent;
 }
 
@@ -13283,7 +13280,6 @@ status-item #a li span,
   height: 4px;
   background: var(--secondary-color);
 }
-
 
 #order-by-status {
   margin-top: 50px;
@@ -14648,7 +14644,6 @@ main {
   align-items: center;
 }
 
-
 @media screen and (max-width: 768px) {
   .order-status .os-dropdown-group .os-dropdown-group-item {
     display: flex;
@@ -14671,7 +14666,6 @@ main {
   border: none;
   font-size: 14px;
 }
-
 
 .order-status .os-dropdown-group .os-dropdown-group-item .os-select {
   width: 140px;
@@ -14884,7 +14878,7 @@ h3.color-white {
   font-weight: var(--bold);
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
   h3.color-white {
     margin-top: 0;
   }
@@ -15616,12 +15610,12 @@ button:focus,
 }
 
 .Petro-detailed .filter-insights .filter .filter-header .btn-group .cta a.btn-dc {
-  background: #ADB4BA;
+  background: #adb4ba;
   color: var(--title-color);
   font-weight: 600;
 }
 
-.Petro-detailed .filter-insights .filter .filter-header .btn-group .cta a.popup_btn{
+.Petro-detailed .filter-insights .filter .filter-header .btn-group .cta a.popup_btn {
   margin: 5px;
 }
 
@@ -15965,8 +15959,8 @@ button:focus,
 }
 
 .submit-order-card h6,
-.submit-order-card p{
- font-size: 12px !important; 
+.submit-order-card p {
+  font-size: 12px !important;
 }
 
 .submit-order-card.with-out-bg {
@@ -16275,7 +16269,6 @@ span#text-one {
   padding-top: 15px;
 }
 
-
 .approved-content-area .approved-content-item:last-child {
   border-bottom: none !important;
 }
@@ -16285,7 +16278,6 @@ span#text-one {
   color: var(--text-color);
   border: none;
 }
-
 
 .last__table_row {
   width: 115px !important;
@@ -16362,7 +16354,7 @@ span#text-one {
   overflow: hidden;
 }
 
-.mod-dicline-boxs .mod-dicline-box .col{
+.mod-dicline-boxs .mod-dicline-box .col {
   margin-top: 15px;
 }
 
@@ -16939,10 +16931,20 @@ span#text-one {
   height: 450px;
 }
 
+.bbb .table-top th{
+  padding: 10px 10px !important;
+
+}
+
+.bbb .input-group{
+  padding: 10px 10px !important;
+
+}
+
 .bbb.detailed-view .trailer-data ul.header-list {
   position: sticky;
   top: 0;
-  background: #EEF0F1;
+  background: #eef0f1;
   padding: 0 15px !important;
   z-index: 999;
 }
@@ -17014,13 +17016,12 @@ span#text-one {
 }
 
 .inventory-values .table-top th {
-  background: #EEF0F1 !important;
+  background: #eef0f1 !important;
 }
 
 .inventory-values .table> :not(:first-child) {
   border-top: none;
 }
-
 
 /* ===================restor-popup==================  */
 
@@ -17085,14 +17086,12 @@ span#text-one {
   max-width: 550px;
 }
 
-
 #tanks-were-successfully .subtitle-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-
 
 #tanks-were-successfully .subtitle-header .text {
   max-width: 750px;
@@ -17147,8 +17146,6 @@ span#text-one {
   color: var(--white-color) !important;
 }
 
-
-
 .btn.connected-btn:hover,
 .con-change-btn .secound-btn:hover,
 .con-click-show .secound-btn:hover {
@@ -17165,11 +17162,10 @@ span#text-one {
   border-radius: 100px;
 }
 
-
 #off-flint-modal,
 #off-Identification {
   width: 620px !important;
-  padding-left: 30px
+  padding-left: 30px;
 }
 
 #off-Identification a {
