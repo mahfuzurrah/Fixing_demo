@@ -5400,7 +5400,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-header .text-end {
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .accordion-item {
@@ -13251,6 +13251,7 @@ status-item #a li span,
 .order-status .filter-insights .filter .filter-header .header-item-group .item p {
   color: var(--bs-blue);
   text-align: justify;
+  font-size: 14px;
 }
 
 .order-status .filter-insights .dropdown-menu .menu-group .status-overview {
@@ -14346,7 +14347,6 @@ status-item #a li span,
 }
 
 .bg-tra {
-  background: transparent !important;
   transition: 0.6s;
   color: var(--text-color);
 }
@@ -15597,6 +15597,10 @@ button:focus,
   margin-right: 50px;
 }
 
+.dp_header.header-item-group .item p {
+font-size: 14px;
+}
+
 .Petro-detailed .filter-insights .filter .filter-header .btn-group {
   display: flex;
   align-items: center;
@@ -16261,6 +16265,11 @@ span#text-one {
 
 button.secound-btn.bg-tra {
   margin-top: 10px;
+  background: #DDE0E3;
+}
+
+button.secound-btn.bg-tra:hover {
+  background: #DDE0E5;
 }
 
 .approved-btn-bottom {
@@ -16310,7 +16319,7 @@ button.secound-btn.bg-tra {
 }
 
 .mod-assignment-card.Regular.shadow p {
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
 }
 
@@ -16343,7 +16352,7 @@ button.secound-btn.bg-tra {
 }
 
 .accordion-scheduled-row .col h4 {
-  font-size: 18px;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -16363,11 +16372,12 @@ button.secound-btn.bg-tra {
 
 .mod-assignment-card .custrom-text span {
   margin-right: 10px;
+  color: var(--secondary-color);
 }
 
-.mod-assignment-card .custrom-text h5,
-.mod-assignment-card .custrom-text .h5 {
-  color: #008c46;
+.mod-assignment-card .custrom-text h4,
+.mod-assignment-card .custrom-text .h4 {
+  color: var(--secondary-color);
 }
 
 .mod-dicline-boxs {

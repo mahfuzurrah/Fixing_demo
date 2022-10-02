@@ -148,7 +148,7 @@ try {
 } catch (e) {}
 
 try {
-  $("button").click(function () {
+  $(".toggle_btn").click(function () {
     $(".toggle_hide").toggleClass("hide");
   });
 } catch (e) {}
