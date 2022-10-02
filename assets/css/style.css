@@ -16320,10 +16320,12 @@ button.secound-btn.bg-tra:hover {
   position: relative;
   right: 20px;
   top: -20px;
+  
 }
 
 .last__table_row .form-select {
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  border-radius: 3px;
 }
 
 .mod-assignment-card.Regular.shadow p {
@@ -16372,6 +16374,7 @@ button.secound-btn.bg-tra:hover {
 .mod-assignment-card {
   padding: 25px;
   margin-top: 10px;
+  border-radius: 5px;
 }
 
 .mod-assignment-card .custrom-text {
@@ -17232,4 +17235,8 @@ td.seriel_number {
   position: absolute;
   top: 11px;
   left: 7px;
+}
+
+.text-end .bg-tra.full-ss{
+  background: transparent;
 }
