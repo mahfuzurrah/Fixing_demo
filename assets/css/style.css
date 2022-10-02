@@ -17204,4 +17204,9 @@ button.secound-btn.bg-tra {
   width: 120px;
 }
 
-/* om-mod-assignment */
+td.seriel_number {
+  padding-bottom: -11px;
+  position: absolute;
+  top: 11px;
+  left: 7px;
+}
