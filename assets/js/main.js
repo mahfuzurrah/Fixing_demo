@@ -147,10 +147,8 @@ try {
   });
 } catch (e) {}
 
-
-
 try {
-  $(".toggle_btn").click(function () {
-    $(".side-appbar").toggleClass("hide");
+  $("button").click(function () {
+    $(".toggle_hide").toggleClass("hide");
   });
 } catch (e) {}
