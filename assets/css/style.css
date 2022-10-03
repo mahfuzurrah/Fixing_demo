@@ -13330,11 +13330,15 @@ status-item #a li span,
 }
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content .card {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content .card:first-child {
   margin-top: 0;
+}
+
+.order-status .filter-insights .dropdown-menu .tab-content .box-content .card .card-body{
+  padding: 8px 15px;
 }
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content .title-color .green-box,
@@ -13356,7 +13360,8 @@ status-item #a li span,
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content h5 {
   font-size: 20px;
-  margin-top: 5px;
+  margin: 5px 0;
+  margin-bottom: 0;
 }
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content span {
