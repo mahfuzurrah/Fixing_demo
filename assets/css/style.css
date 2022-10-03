@@ -13311,6 +13311,7 @@ status-item #a li span,
 #order-by-status .tab-pane .box-content td {
   font-size: 12px;
   color: var(--description-color);
+  padding: 8px; 
 }
 
 #order-by-status .tab-pane .box-content td:first-child {
@@ -13345,13 +13346,13 @@ status-item #a li span,
 }
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content .title-color p {
-  font-size: 12px;
+  font-size: 10px;
   margin: 0;
 }
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content h5 {
-  font-size: 25px;
-  margin-top: 10px;
+  font-size: 20px;
+  margin-top: 5px;
 }
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content span {
