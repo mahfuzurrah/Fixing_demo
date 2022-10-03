@@ -13296,7 +13296,7 @@ status-item #a li span,
 }
 
 #order-by-status {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #order-by-status .tab-pane .box-content .table {
@@ -13346,7 +13346,7 @@ status-item #a li span,
 }
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content .title-color .red-box {
-  background: #ff0000;
+  background: #ff0000; 
 }
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content .title-color p {
