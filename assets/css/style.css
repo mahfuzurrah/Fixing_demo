@@ -13339,8 +13339,8 @@ status-item #a li span,
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content .title-color .green-box,
 .order-status .filter-insights .dropdown-menu .tab-content .box-content .title-color .red-box {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background: #119e50;
   border-radius: 500px;
 }
