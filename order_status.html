@@ -400,7 +400,7 @@
                     </div>
                     <div class="tab-pane fade" id="Monitoring">
                       <div class="row">
-                        <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
                           <div class="box">
                             <div id="monitoring-bar" style="height: 230px; width: auto;"></div>
                           </div>
@@ -427,36 +427,48 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
                           <div class="box box-content">
                             <h5>Error Log</h5>
-                            <table class="table table-hover">
-                              <thead>
-                                <tr>
-                                  <th>EVENT</th>
-                                  <th>ORDER</th>
-                                  <th>TIME</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Rejected</td>
-                                  <td>87999</td>
-                                  <td>3:35PM UTC 2022-AUG-18</td>
-                                </tr>
-                                <tr>
-                                  <td>Rejected</td>
-                                  <td>87999</td>
-                                  <td></td>
-                                </tr>
-                                <tr>
-                                  <td>Rejected</td>
-                                  <td></td>
-                                  <td></td>
-                                </tr>
-
-                              </tbody>
-                            </table>
+                            <div class="small_table_OS">
+                              <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th style="padding: 10px 0;">EVENT</th>
+                                    <th style="padding: 10px 0;">ORDER</th>
+                                    <th style="padding: 10px 0;">TIME</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Rejected</td>
+                                    <td>87999</td>
+                                    <td>3:35PM UTC 2022-AUG-18</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Rejected</td>
+                                    <td>87999</td>
+                                    <td>3:35PM UTC 2022-AUG-18</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Rejected</td>
+                                    <td>87999</td>
+                                    <td>3:35PM UTC 2022-AUG-18</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Rejected</td>
+                                    <td>87999</td>
+                                    <td>3:35PM UTC 2022-AUG-18</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Rejected</td>
+                                    <td>87999</td>
+                                    <td>3:35PM UTC 2022-AUG-18</td>
+                                  </tr>
+  
+                                </tbody>
+                              </table>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1650,6 +1662,9 @@
             minorGridLineWidth: 1,
             gridLineWidth: 1,
             alternateGridColor: null,
+            title: {
+              text: null,
+            },
           },
           colors: ["#128DFE", "#FF0000"],
           plotOptions: {

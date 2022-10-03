@@ -17267,3 +17267,12 @@ td.seriel_number {
 .text-end .bg-tra.full-ss {
   background: transparent;
 }
+
+.small_table_OS{
+  height: 140px;
+  overflow: auto !important;
+}
+
+.small_table_OS .table> :not(:first-child){
+  border-top: 0;
+}
