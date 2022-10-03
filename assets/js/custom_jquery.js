@@ -171,4 +171,8 @@ $(function () {
     });
   });
 
+  jQuery('body').click( function(e) {
+    jQuery('.collapse').collapse('hide');
+});
+
 });
