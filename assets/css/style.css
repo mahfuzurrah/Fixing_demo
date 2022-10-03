@@ -13296,7 +13296,7 @@ status-item #a li span,
 }
 
 #order-by-status {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 #order-by-status .tab-pane .box-content .table {
@@ -13333,6 +13333,10 @@ status-item #a li span,
   margin-top: 20px;
 }
 
+.order-status .filter-insights .dropdown-menu .tab-content .box-content .card:first-child {
+  margin-top: 0;
+}
+
 .order-status .filter-insights .dropdown-menu .tab-content .box-content .title-color .green-box,
 .order-status .filter-insights .dropdown-menu .tab-content .box-content .title-color .red-box {
   width: 20px;
@@ -13356,7 +13360,7 @@ status-item #a li span,
 }
 
 .order-status .filter-insights .dropdown-menu .tab-content .box-content span {
-  font-size: 14px;
+  font-size: 10px;
   margin: 0;
 }
 

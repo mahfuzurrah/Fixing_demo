@@ -1181,7 +1181,7 @@ chart.render();
 var optionsStatusBar = {
   chart: {
     type: "bar",
-    height: 300,
+    height: 270,
     width: "100%",
     stacked: true,
     toolbar: {
