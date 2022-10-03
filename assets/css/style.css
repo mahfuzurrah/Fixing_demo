@@ -6350,7 +6350,15 @@ fieldset:disabled .btn {
 }
 
 .track-order-status-modal .modal-content {
-  height: 480px;
+  height: 480px !important;
+}
+
+.track-order-status-modal .modal-content .ps-4{
+  padding-left: 50px !important
+}
+
+.track-order-status-modal .modal-content .modal-title{
+  margin-left: 20px
 }
 
 /* offcanvas-set-up-basics */
@@ -13039,7 +13047,7 @@ h5 {
 .order-status .orderd-etails .status .status-item-group .item .btn {
   padding: 8px 15px;
   width: 120px;
-  background-color: var(--bs-primary);
+  background-color: #0078D4;
 }
 
 .order-status .orderd-etails .status .status-item-group .item .btn.closed-btn {
@@ -14889,6 +14897,11 @@ h3.color-white {
   }
 }
 
+h3.color-white{
+  font-size: 18px !important;
+  font-weight: var(--medium)
+}
+
 h3.color-white.title,
 p.color-white.title {
   position: absolute;
@@ -14902,6 +14915,7 @@ p.color-white.title {
 p.color-white {
   margin-top: -20px;
   margin-bottom: 30px;
+  font-size: 14px;
 }
 
 a.color-white.h-underline {
@@ -14990,15 +15004,15 @@ input[type="date"].status-mod-input::-webkit-calendar-picker-indicator {
 .tatus-mod-upload-tab .nav-pills .nav-link.active {
   opacity: 1;
   position: relative;
-  color: var(--secondary-color);
+  color: #042C47;
 }
 
 .tatus-mod-upload-tab .nav-pills .nav-link.active::before {
   position: absolute;
   content: "";
   width: 100%;
-  height: 1px;
-  background: var(--secondary-color);
+  height: 2px;
+  background: #095f99;
   bottom: -1px;
   left: 0;
 }
@@ -16311,6 +16325,7 @@ button.secound-btn.bg-tra:hover {
   background-color: var(--secondary-light-color);
   color: var(--text-color);
   border: none;
+  font-weight: var(--bold);
 }
 
 .last__table_row {
@@ -16379,6 +16394,7 @@ button.secound-btn.bg-tra:hover {
 
 .mod-assignment-card .custrom-text {
   display: flex;
+  align-items: center;
   color: #008c46;
 }
 
@@ -16390,6 +16406,7 @@ button.secound-btn.bg-tra:hover {
 .mod-assignment-card .custrom-text h4,
 .mod-assignment-card .custrom-text .h4 {
   color: #007251;
+  margin-top: 4px;
 }
 
 .mod-dicline-boxs {
