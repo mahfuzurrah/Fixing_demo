@@ -17276,3 +17276,17 @@ td.seriel_number {
 .small_table_OS .table> :not(:first-child){
   border-top: 0;
 }
+
+#S_O_btn path{
+fill: var(--secondary-color);
+stroke: var(--secondary-color)
+}
+
+#S_O_btn a.active path{
+fill: var(--white-color);
+stroke: var(--white-color)
+}
+
+#ck_box_pop input#text{
+border: 1px solid var(--border-color) !important
+}

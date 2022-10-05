@@ -171,8 +171,12 @@ $(function () {
     });
   });
 
-  jQuery('body').click( function(e) {
-    jQuery('.collapse').collapse('hide');
-});
+  jQuery("body").click(function (e) {
+    jQuery(".collapse").collapse("hide");
+  });
 
+  $("#S_O_btn").on("click", "a", function () {
+    $("#S_O_btn a.active").removeClass("active");
+    $(this).addClass("active");
+  });
 });
