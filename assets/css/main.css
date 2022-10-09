@@ -398,6 +398,7 @@ color: #095F99;
   margin: 0;
 }
 
+.carriers_card .card,
 .LYNX-overview #overview .card {
   padding: 20px;
   border: 1px solid var(--border-color);
@@ -406,6 +407,8 @@ color: #095F99;
   height: 280px;
 }
 
+
+.carriers_card .card .card-body,
 .LYNX-overview #overview .card .card-body {
   padding: 0;
 }
@@ -422,6 +425,7 @@ color: #095F99;
   font-weight: 600;
 }
 
+.carriers_card .tab-group .tab-item h6,
 .LYNX-overview #overview .tab-group .tab-data {
   margin-top: 40px;
 }
@@ -450,6 +454,8 @@ color: #095F99;
   font-size: 16px;
   font-weight: 600;
 }
+
+
 
 .LYNX-overview #overview .tab-group .shipments .shipments-progress,
 .LYNX-overview #overview .tab-group .shipments-month {
@@ -1229,3 +1235,4 @@ color: #095F99;
   text-decoration: underline !important;
   cursor: pointer;
 }
+

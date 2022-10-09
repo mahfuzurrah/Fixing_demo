@@ -3962,8 +3962,9 @@ fieldset:disabled .btn {
   width: 8px;
   height: 8px;
   margin-left: 10px;
-  border-bottom: 1px solid #000;
-  border-right: 1px solid #000;
+  border-top: 0 !important;
+  border-bottom: 1px solid #000 !important;
+  border-right: 1px solid #000 !important;
   transform: rotate(45deg) translateY(-50%);
   transition: all 0.5s ease-in-out;
   position: relative;
@@ -17437,4 +17438,57 @@ td.seriel_number {
 
 #ck_box_pop input#text {
   border: 1px solid var(--border-color) !important;
+}
+
+.carriers_card .card h6,
+.carriers_card .card .shipments h6 {
+  font-weight: var(--bold);
+  font-size: 15px;
+}
+
+.carriers_card .card .shipments-progress {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.carriers_card .card .grow {
+  margin-top: 30px;
+}
+
+.carriers_card .tab-group .shipments .grow p span {
+  color: #007251;
+}
+
+.carriers_card .tab-group .shipments .progress {
+  margin-top: 10px;
+  padding: 0;
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  background: #e5e5e5;
+  border-radius: 100px;
+}
+
+.carriers_card .tab-group .shipments .progress .bar {
+  position: relative;
+  float: left;
+  min-width: 1%;
+  height: 100%;
+  background: cornflowerblue;
+}
+
+.carriers_card .tab-group .shipments .progress .bar.bartwo {
+  background: #00ab79 !important;
+}
+
+
+.carriers_card .tab-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carriers_card .tab-data{
+  margin-top: 40px;
 }
