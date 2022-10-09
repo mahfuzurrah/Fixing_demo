@@ -17482,13 +17482,12 @@ td.seriel_number {
   background: #00ab79 !important;
 }
 
-
-.carriers_card .tab-item{
+.carriers_card .tab-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.carriers_card .tab-data{
+.carriers_card .tab-data {
   margin-top: 40px;
 }
