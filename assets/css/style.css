@@ -3963,6 +3963,7 @@ fieldset:disabled .btn {
   height: 8px;
   margin-left: 10px;
   border-top: 0 !important;
+  border-left: 0 !important;
   border-bottom: 1px solid #000 !important;
   border-right: 1px solid #000 !important;
   transform: rotate(45deg) translateY(-50%);

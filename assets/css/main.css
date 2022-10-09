@@ -262,8 +262,14 @@ color: #095F99;
   color: var(--description-color);
 }
 
+.filter-insights .dropdown-container .dropdown-menu .menu-group .item {
+  width: 100%;
+  margin-top: 20px !important;
+}
+
 .filter-insights .dropdown-container .dropdown-menu .menu-group .VALUE .item {
   width: 100%;
+  margin-top: 20px !important;
 }
 
 .filter-insights
